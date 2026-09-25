@@ -1,1 +1,491 @@
-v
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>⚡ A16Xelvora · HOT DEALS 🔥</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, 'Segoe UI', 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 50%, #1a0b2e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .offer-card {
+            background: rgba(25, 15, 45, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 2.5rem;
+            border: 1px solid rgba(180, 130, 255, 0.5);
+            padding: 2.2rem 2rem;
+            max-width: 1400px;
+            width: 100%;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(170, 120, 255, 0.3) inset, 0 0 40px rgba(138, 43, 226, 0.3);
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(135deg, #c77dff, #ff6b9d, #ffd166);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.3rem;
+        }
+        h1 i { background: none; font-size: 2.2rem; color: #e0aaff; filter: drop-shadow(0 0 8px #c77dff); -webkit-text-fill-color: #e0aaff; }
+        .sub-head {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #d4b8ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            border-bottom: 1px dashed rgba(180, 130, 255, 0.5);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .popup-settings-wrapper { text-align: center; margin-bottom: 1rem; }
+        .popup-settings-btn {
+            background: linear-gradient(135deg, #ff9800, #f44336);
+            border: none;
+            border-radius: 40px;
+            padding: 12px 28px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .popup-settings-btn:hover { transform: scale(1.05); box-shadow: 0 0 35px rgba(255, 152, 0, 0.8); }
+        .popup-note { display: block; color: #ffcc80; font-size: 0.8rem; margin-top: 6px; }
+        .settings-panel {
+            background: rgba(40, 20, 70, 0.5);
+            border-radius: 20px;
+            padding: 15px 20px;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border: 1px solid #b47aff44;
+        }
+        .settings-panel label { color: #e0aaff; font-weight: 600; font-size: 0.95rem; white-space: nowrap; }
+        .settings-panel input {
+            width: 70px;
+            padding: 8px 12px;
+            border-radius: 30px;
+            border: 2px solid #c77dff;
+            background: #1a0b2e;
+            color: #ffd166;
+            font-weight: 700;
+            font-size: 1rem;
+            text-align: center;
+            outline: none;
+        }
+        .settings-panel input:focus { border-color: #ffd166; box-shadow: 0 0 12px #ffd16655; }
+        .settings-panel input.limit-input {
+            width: 60px;
+            padding: 6px 8px;
+            font-size: 0.9rem;
+            border-color: #06d6a0;
+        }
+        .settings-panel input.limit-input:focus { border-color: #06d6a0; box-shadow: 0 0 12px #06d6a055; }
+        .save-btn {
+            background: linear-gradient(135deg, #06d6a0, #0d5240);
+            border: none;
+            border-radius: 30px;
+            padding: 8px 18px;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        .save-btn:hover { transform: scale(1.05); box-shadow: 0 0 15px #06d6a0; }
+        .auto-click-wrapper { text-align: center; margin-bottom: 1.5rem; }
+        .auto-click-btn {
+            background: linear-gradient(135deg, #ff6b9d, #c77dff);
+            border: none;
+            border-radius: 60px;
+            padding: 1rem 2.5rem;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 0 30px rgba(255, 107, 157, 0.6);
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+        .auto-click-btn:hover { transform: scale(1.05); box-shadow: 0 0 50px rgba(255, 107, 157, 0.9); }
+        .auto-click-btn:disabled { background: #555; cursor: not-allowed; box-shadow: none; opacity: 0.6; }
+        .auto-status { display: block; margin-top: 10px; color: #ffd166; font-weight: 600; font-size: 0.95rem; min-height: 22px; }
+        .click-dashboard {
+            background: rgba(40, 20, 70, 0.6);
+            border-radius: 60px;
+            padding: 0.8rem 2rem;
+            margin-bottom: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px 25px;
+            border: 1px solid #b47aff66;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(180, 122, 255, 0.2);
+        }
+        .total-clicks { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.3rem; color: #f0e2ff; }
+        .total-clicks i { font-size: 2rem; color: #ffb3c6; filter: drop-shadow(0 0 6px #ff6b9d); }
+        .click-badge {
+            background: #1a0b2ecc;
+            backdrop-filter: blur(4px);
+            padding: 8px 28px;
+            border-radius: 50px;
+            border: 1px solid #ffd166;
+            box-shadow: 0 0 15px #ffd16633;
+        }
+        .click-badge span { font-weight: 800; font-size: 2.2rem; color: #ffd166; margin-left: 10px; letter-spacing: 1px; }
+        .legend { display: flex; gap: 20px; font-size: 0.9rem; font-weight: 500; }
+        .legend-item { display: flex; align-items: center; gap: 8px; }
+        .legend-dot { width: 16px; height: 16px; border-radius: 20px; background: #9d4edd; box-shadow: 0 0 8px #c77dff; }
+        .legend-dot.used { background: #06d6a0; box-shadow: 0 0 12px #06d6a0; }
+        .btn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin-bottom: 1.5rem; }
+        .offer-btn {
+            background: linear-gradient(135deg, #3c1e6b, #2a1548);
+            border: none;
+            border-radius: 60px;
+            padding: 0.85rem 0.6rem;
+            color: #f5edff;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 0 1.5px #7b2cbf inset;
+            width: 100%;
+            text-decoration: none;
+            position: relative;
+            border: 1px solid #9d4edd55;
+        }
+        .offer-btn i { font-size: 1.2rem; color: #ffb3c6; }
+        .click-counter {
+            background: #1a0b2e;
+            border-radius: 40px;
+            padding: 2px 10px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: #ffd166;
+            border: 1px solid #ffb347;
+            margin-left: 4px;
+        }
+        .offer-btn.clicked { background: linear-gradient(135deg, #0d5240, #073b2e); border: 1.5px solid #06d6a0; box-shadow: 0 0 18px #06d6a0, 0 0 0 1.5px #ffd166 inset; }
+        .offer-btn.clicked i { color: #ffea9f; }
+        .offer-btn.clicked .click-counter { background: #0a3328; color: #ffeaa6; border-color: #ffd966; }
+        .offer-btn:hover { transform: translateY(-4px) scale(1.03); background: linear-gradient(135deg, #5a2ca0, #3c1e6b); box-shadow: 0 18px 28px -8px black, 0 0 0 2.5px #e0aaff inset; }
+        .section-label { font-size: 1.15rem; margin: 18px 0 8px; color: #e0aaff; display: flex; align-items: center; gap: 10px; font-weight: 600; }
+        .section-label i { color: #ffb3c6; }
+        .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            color: #cbb2ff;
+            border-top: 1px solid #b47aff66;
+            padding-top: 1.4rem;
+            font-size: 0.9rem;
+        }
+        .reset-link {
+            background: none;
+            border: 1.5px solid #e0aaff;
+            padding: 8px 22px;
+            border-radius: 50px;
+            color: #f0d6ff;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+        }
+        .reset-link:hover { background: #b47aff30; border-color: #ffd166; color: #ffeaaf; }
+        @media (max-width: 700px) {
+            .offer-card { padding: 1.5rem 1.2rem; }
+            h1 { font-size: 2rem; }
+            .click-dashboard { flex-direction: column; align-items: stretch; border-radius: 40px; padding: 1.2rem; }
+            .btn-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+            .offer-btn { padding: 0.7rem 0.5rem; font-size: 0.8rem; }
+            .auto-click-btn { font-size: 1rem; padding: 0.8rem 1.8rem; }
+            .settings-panel { flex-direction: column; gap: 10px; }
+            .popup-settings-btn { font-size: 0.9rem; padding: 10px 20px; }
+        }
+    </style>
+</head>
+<body>
+<div class="offer-card">
+    <h1><i class="fas fa-crown"></i> A16Xelvora DEAL ZONE <i class="fas fa-bolt"></i></h1>
+    <div class="sub-head"><i class="fas fa-fire-flame-curved"></i> 50 PREMIUM OFFERS · ALL ACTIVE <i class="fas fa-gem"></i></div>
+
+    <div class="popup-settings-wrapper">
+        <button class="popup-settings-btn" onclick="openPopupSettings()"><i class="fas fa-cog"></i> ALLOW POPUPS FIRST (OPEN SETTINGS)</button>
+        <span class="popup-note">Click → Copy URL → Open new tab → Paste → Allow → Then START</span>
+    </div>
+
+    <div class="settings-panel">
+        <label for="roundInput">ROUNDS:</label>
+        <input type="number" id="roundInput" value="3" min="1" max="100" onchange="saveRoundSetting()">
+        <label for="limitInput">LIMIT:</label>
+        <input type="number" id="limitInput" class="limit-input" value="0" min="0" max="9999" placeholder="0=∞" onchange="saveRoundSetting()">
+        <button class="save-btn" onclick="saveRoundSetting()">SAVE</button>
+        <span style="color:#06d6a0;font-size:0.85rem;" id="saveConfirm"></span>
+    </div>
+
+    <div class="auto-click-wrapper">
+        <button class="auto-click-btn" id="autoClickBtn" onclick="startAutoClick()">START AUTO CLICK</button>
+        <div class="auto-status" id="autoStatus">Ready · <span id="roundDisplay">3</span> round(s) · limit <span id="limitDisplay">∞</span></div>
+    </div>
+
+    <div class="click-dashboard">
+        <div class="total-clicks"><i class="fas fa-chart-pie"></i><span>TOTAL CLAIMS</span></div>
+        <div class="click-badge"><i class="fas fa-fingerprint"></i> <span id="globalCounter">0</span></div>
+        <div class="legend"><div class="legend-item"><span class="legend-dot"></span> available</div><div class="legend-item"><span class="legend-dot used"></span> claimed</div></div>
+    </div>
+
+    <div class="section-label"><i class="fas fa-star"></i> HOT PREMIUM DEALS <i class="fas fa-star"></i></div>
+    <div class="btn-grid" id="offerGrid">
+        <!-- 1 -->
+        <a href="https://ransomescapesmooth.com/x5qu83g2a?key=e799d766ea78866305b67012dbd42576" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_1" bn="1"><i class="fas fa-skull"></i> A16XELVORA REAPER 1 <span class="click-counter" id="count_1">0</span></a>
+        <!-- 2 -->
+        <a href="https://ransomescapesmooth.com/t8p4z4zxe?key=9b744a20326e4f44cc933ea2a27533c9" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_2" bn="2"><i class="fas fa-ring"></i> A16XELVORA RING 2 <span class="click-counter" id="count_2">0</span></a>
+        <!-- 3 -->
+        <a href="https://ransomescapesmooth.com/qvb3dcwhi1?key=948170456402ddb820f0608ab8a05d07" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_3" bn="3"><i class="fas fa-mug-hot"></i> A16XELVORA LATTE 3 <span class="click-counter" id="count_3">0</span></a>
+        <!-- 4 -->
+        <a href="https://ransomescapesmooth.com/e1jfdu9i?key=37c6d73bdffd6296011b11b9ffc9c311" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_4" bn="4"><i class="fas fa-hand-fist"></i> A16XELVORA FORCE 4 <span class="click-counter" id="count_4">0</span></a>
+        <!-- 5 -->
+        <a href="https://ransomescapesmooth.com/y1ycndbhz?key=467d3cb32a2b92902a7f4d0f4f524239" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_5" bn="5"><i class="fas fa-sun"></i> A16XELVORA SHINE 5 <span class="click-counter" id="count_5">0</span></a>
+        <!-- 6 -->
+        <a href="https://ransomescapesmooth.com/fihpss0k?key=77496b4c922abeea0e2f483bc6b7362e" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_6" bn="6"><i class="fas fa-paw"></i> A16XELVORA WOLF 6 <span class="click-counter" id="count_6">0</span></a>
+        <!-- 7 -->
+        <a href="https://ransomescapesmooth.com/q7d7qupaba?key=8aab6524c80f1dced5c59aaa61755c6a" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_7" bn="7"><i class="fas fa-snowflake"></i> A16XELVORA ICE 7 <span class="click-counter" id="count_7">0</span></a>
+        <!-- 8 -->
+        <a href="https://ransomescapesmooth.com/rf99pgcjy2?key=a81f5af444843d5ac8c0aeece8b2255a" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_8" bn="8"><i class="fas fa-chess-rook"></i> A16XELVORA ROOK 8 <span class="click-counter" id="count_8">0</span></a>
+        <!-- 9 -->
+        <a href="https://ransomescapesmooth.com/x5p3vhdqyw?key=d6cf5cda6bb81c8411896b9de45460a0" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_9" bn="9"><i class="fas fa-moon"></i> A16XELVORA MOON 9 <span class="click-counter" id="count_9">0</span></a>
+        <!-- 10 -->
+        <a href="https://ransomescapesmooth.com/dthpt6gh?key=c174b297eb8d71ec0127206e56753b08" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_10" bn="10"><i class="fas fa-coffee"></i> A16XELVORA COFFEE 10 <span class="click-counter" id="count_10">0</span></a>
+        <!-- 11 -->
+        <a href="https://ransomescapesmooth.com/xdkt7819i?key=aa28c4b56862647c2de7997fdb1a5b04" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_11" bn="11"><i class="fas fa-heart-pulse"></i> A16XELVORA PULSE 11 <span class="click-counter" id="count_11">0</span></a>
+        <!-- 12 -->
+        <a href="https://ransomescapesmooth.com/rk9gwkmsh7?key=b79160c041c0917ef7c9188a09614b6b" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_12" bn="12"><i class="fas fa-mountain"></i> A16XELVORA VOLCANO 12 <span class="click-counter" id="count_12">0</span></a>
+        <!-- 13 -->
+        <a href="https://ransomescapesmooth.com/a5i0ujzdz?key=305063b77788137983537920a7a4b42f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_13" bn="13"><i class="fas fa-hat-wizard"></i> A16XELVORA WITCH 13 <span class="click-counter" id="count_13">0</span></a>
+        <!-- 14 -->
+        <a href="https://ransomescapesmooth.com/tvb86i07?key=cfaaf2dae828658f4e02b859665e286f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_14" bn="14"><i class="fas fa-dove"></i> A16XELVORA EAGLE 14 <span class="click-counter" id="count_14">0</span></a>
+        <!-- 15 -->
+        <a href="https://ransomescapesmooth.com/tt19wwxhse?key=7bbc4a58491e0bd368e1862c8fbd29f3" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_15" bn="15"><i class="fas fa-dove"></i> A16XELVORA FALCON 15 <span class="click-counter" id="count_15">0</span></a>
+        <!-- 16 -->
+        <a href="https://ransomescapesmooth.com/idaw1vymse?key=29ba97b62ee43046d1b7a7fa0ce68bb8" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_16" bn="16"><i class="fas fa-dove"></i> A16XELVORA HAWK 16 <span class="click-counter" id="count_16">0</span></a>
+        <!-- 17 -->
+        <a href="https://ransomescapesmooth.com/v0890bif8?key=0ce52d39db6fa478db390aa466952cd7" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_17" bn="17"><i class="fas fa-rainbow"></i> A16XELVORA RAINBOW 17 <span class="click-counter" id="count_17">0</span></a>
+        <!-- 18 -->
+        <a href="https://ransomescapesmooth.com/jp65ztf4?key=434e3c9c995510ae393f81827a16ae94" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_18" bn="18"><i class="fas fa-droplet"></i> A16XELVORA WATER 18 <span class="click-counter" id="count_18">0</span></a>
+        <!-- 19 -->
+        <a href="https://ransomescapesmooth.com/fxv4q07kqa?key=97ba821fe22e907ee25347bfb20e51ac" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_19" bn="19"><i class="fas fa-hat-wizard"></i> A16XELVORA WIZARD 19 <span class="click-counter" id="count_19">0</span></a>
+        <!-- 20 -->
+        <a href="https://ransomescapesmooth.com/p4nr66u0d?key=650ad28245fe04d73193e6a0328a95b0" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_20" bn="20"><i class="fas fa-mountain"></i> A16XELVORA TITAN 20 <span class="click-counter" id="count_20">0</span></a>
+        <!-- 21 -->
+        <a href="https://ransomescapesmooth.com/br4fstnv?key=eefd8a5a02b93932639f2afedd7e43e9" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_21" bn="21"><i class="fas fa-crow"></i> A16XELVORA RAVEN 21 <span class="click-counter" id="count_21">0</span></a>
+        <!-- 22 -->
+        <a href="https://ransomescapesmooth.com/zpjnenczg9?key=77eae3e8d49697fd866f65b2447ad3d1" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_22" bn="22"><i class="fas fa-clock"></i> A16XELVORA TIME 22 <span class="click-counter" id="count_22">0</span></a>
+        <!-- 23 -->
+        <a href="https://ransomescapesmooth.com/vitmsefb?key=29a66ec67118a358ee62ab405d579753" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_23" bn="23"><i class="fas fa-smog"></i> A16XELVORA SMOKE 23 <span class="click-counter" id="count_23">0</span></a>
+        <!-- 24 -->
+        <a href="https://ransomescapesmooth.com/y5wtv2hc?key=f9a2bb67eb32563b8ea3f06d2db94352" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_24" bn="24"><i class="fas fa-cloud-rain"></i> A16XELVORA RAIN 24 <span class="click-counter" id="count_24">0</span></a>
+        <!-- 25 -->
+        <a href="https://ransomescapesmooth.com/e7qi0n0sh?key=5bb15c6c3a55665ab4310a0aabaf8c3d" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_25" bn="25"><i class="fas fa-sun"></i> A16XELVORA SUN 25 <span class="click-counter" id="count_25">0</span></a>
+        <!-- 26 -->
+        <a href="https://ransomescapesmooth.com/f60bhyi6b?key=b14951e36c90659b4326d4aa9b2e22e5" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_26" bn="26"><i class="fas fa-coins"></i> A16XELVORA SILVER 26 <span class="click-counter" id="count_26">0</span></a>
+        <!-- 27 -->
+        <a href="https://ransomescapesmooth.com/smzrpzbu?key=7183ff41683f3d9749af187cf528a24d" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_27" bn="27"><i class="fas fa-building"></i> A16XELVORA TOWER 27 <span class="click-counter" id="count_27">0</span></a>
+        <!-- 28 -->
+        <a href="https://ransomescapesmooth.com/r8sdv7w3?key=6d0b8e387c5b17f272bf9e8082d1b154" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_28" bn="28"><i class="fas fa-bullseye"></i> A16XELVORA STRIKE 28 <span class="click-counter" id="count_28">0</span></a>
+        <!-- 29 -->
+        <a href="https://ransomescapesmooth.com/pjzz62r2pd?key=2294814d5590e39ee510df1be98d44fc" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_29" bn="29"><i class="fas fa-fire"></i> A16XELVORA FIRE 29 <span class="click-counter" id="count_29">0</span></a>
+        <!-- 30 -->
+        <a href="https://ransomescapesmooth.com/g49svsm2r?key=2d661f673b7390bd5f1fe2282a766906" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_30" bn="30"><i class="fas fa-crosshairs"></i> A16XELVORA SNIPER 30 <span class="click-counter" id="count_30">0</span></a>
+        <!-- 31 -->
+        <a href="https://ransomescapesmooth.com/p8eztg4df3?key=e79107791c038ec6c258b5ab1288bfe7" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_31" bn="31"><i class="fas fa-dove"></i> A16XELVORA ANGEL 31 <span class="click-counter" id="count_31">0</span></a>
+        <!-- 32 -->
+        <a href="https://ransomescapesmooth.com/mcfe725ti?key=f4289478098b0c39193c97adec62f87e" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_32" bn="32"><i class="fas fa-circle-notch"></i> A16XELVORA AURA 32 <span class="click-counter" id="count_32">0</span></a>
+        <!-- 33 -->
+        <a href="https://ransomescapesmooth.com/b2dzyhda?key=9b2447dcdc7a3fca20cb7df2e7c8d318" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_33" bn="33"><i class="fas fa-wave-square"></i> A16XELVORA ECHO 33 <span class="click-counter" id="count_33">0</span></a>
+        <!-- 34 -->
+        <a href="https://ransomescapesmooth.com/ruqai5qw2?key=b26c736c7dc4a4d10c81b06505fdbbbf" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_34" bn="34"><i class="fas fa-fire"></i> A16XELVORA DEVIL 34 <span class="click-counter" id="count_34">0</span></a>
+        <!-- 35 -->
+        <a href="https://ransomescapesmooth.com/syiggh1wbu?key=37b2a00b67f9829b64eb7e2c39e39e46" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_35" bn="35"><i class="fas fa-cocktail"></i> A16XELVORA COCKTAIL 35 <span class="click-counter" id="count_35">0</span></a>
+        <!-- 36 -->
+        <a href="https://ransomescapesmooth.com/i4adrq2s?key=7c24e1ff0146894b9d060304ccfabfae" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_36" bn="36"><i class="fas fa-crown"></i> A16XELVORA CROWN 36 <span class="click-counter" id="count_36">0</span></a>
+        <!-- 37 -->
+        <a href="https://ransomescapesmooth.com/t0z14791?key=56d8d73dbd92908b603eed194481c5ee" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_37" bn="37"><i class="fas fa-database"></i> A16XELVORA BYTE 37 <span class="click-counter" id="count_37">0</span></a>
+        <!-- 38 -->
+        <a href="https://ransomescapesmooth.com/p7c1uqf6?key=e35e273468f624bb2d37360a5eab2f34" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_38" bn="38"><i class="fas fa-rocket"></i> A16XELVORA SPACE 38 <span class="click-counter" id="count_38">0</span></a>
+        <!-- 39 -->
+        <a href="https://ransomescapesmooth.com/ajneqapqvy?key=bef18ca026ec44945aa1a95c5bb11a0f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_39" bn="39"><i class="fas fa-code"></i> A16XELVORA CODE 39 <span class="click-counter" id="count_39">0</span></a>
+        <!-- 40 -->
+        <a href="https://ransomescapesmooth.com/jiw6rtu5ah?key=6dc068cc86971cfb6e8455ccb688b6e4" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_40" bn="40"><i class="fas fa-chess-pawn"></i> A16XELVORA PAWN 40 <span class="click-counter" id="count_40">0</span></a>
+        <!-- 41 -->
+        <a href="https://ransomescapesmooth.com/hugg14qg?key=8837ac22ac87238bdc3f465b69165173" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_41" bn="41"><i class="fas fa-dragon"></i> A16XELVORA DRAGON 41 <span class="click-counter" id="count_41">0</span></a>
+        <!-- 42 -->
+        <a href="https://ransomescapesmooth.com/p1xpixfij?key=22758f1f36862a9ed879e2ce491a66ca" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_42" bn="42"><i class="fas fa-rainbow"></i> A16XELVORA PRISM 42 <span class="click-counter" id="count_42">0</span></a>
+        <!-- 43 -->
+        <a href="https://ransomescapesmooth.com/hxe4xhvpp?key=ec2cce64ab39103300fcf4a3bc5005f9" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_43" bn="43"><i class="fas fa-arrow-right"></i> A16XELVORA ARROW 43 <span class="click-counter" id="count_43">0</span></a>
+        <!-- 44 -->
+        <a href="https://ransomescapesmooth.com/ht9snzihn?key=24cbbde9bef708ccea086a34d03ac910" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_44" bn="44"><i class="fas fa-umbrella-beach"></i> A16XELVORA BEACH 44 <span class="click-counter" id="count_44">0</span></a>
+        <!-- 45 -->
+        <a href="https://ransomescapesmooth.com/v13k8229?key=947f8e2ef494665441cbc0fe854fefb8" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_45" bn="45"><i class="fas fa-cat"></i> A16XELVORA CAT 45 <span class="click-counter" id="count_45">0</span></a>
+        <!-- 46 -->
+        <a href="https://ransomescapesmooth.com/j27r07zng?key=1b17a0c25a15e6728f25fed44965d236" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_46" bn="46"><i class="fas fa-rainbow"></i> A16XELVORA SPECTRUM 46 <span class="click-counter" id="count_46">0</span></a>
+        <!-- 47 -->
+        <a href="https://ransomescapesmooth.com/fhkh4413?key=f5bbf3e292e12bbaa53dd98c69774441" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_47" bn="47"><i class="fas fa-bug"></i> A16XELVORA BUG 47 <span class="click-counter" id="count_47">0</span></a>
+        <!-- 48 -->
+        <a href="https://ransomescapesmooth.com/gi3j5y68?key=0df16082c1dfc43e772cf8d65bc59c6c" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_48" bn="48"><i class="fas fa-bitcoin"></i> A16XELVORA BTC 48 <span class="click-counter" id="count_48">0</span></a>
+        <!-- 49 -->
+        <a href="https://ransomescapesmooth.com/weiz3sgv1q?key=e8e1a87393be779ba4ce073b588af3f1" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_49" bn="49"><i class="fas fa-bolt"></i> A16XELVORA BOLT 49 <span class="click-counter" id="count_49">0</span></a>
+        <!-- 50 -->
+        <a href="https://ransomescapesmooth.com/y22w6n8q?key=2a91c78c213e54fff7004fd6b710a086" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_50" bn="50"><i class="fas fa-staff-snake"></i> A16XELVORA SNAKE 50 <span class="click-counter" id="count_50">0</span></a>
+    </div>
+
+    <div class="card-footer">
+        <span><i class="far fa-clock"></i> 50 active deals · instant access</span>
+        <div class="reset-link" onclick="resetAllCounters()"><i class="fas fa-arrows-rotate"></i> reset counters</div>
+    </div>
+</div>
+
+<script>
+    const btnsTotal = 50;
+    let cMap = {};
+    for (let i=1; i<=btnsTotal; i++) cMap['btn_'+i] = 0;
+    const STORE = 'mega_50_generated', RKEY = 'auto_rounds_v8', LKEY = 'auto_limit_v1';
+
+    function lCounts() { try { let s=localStorage.getItem(STORE); if(s) { let p=JSON.parse(s); for(let k in cMap) if(typeof p[k]==='number') cMap[k]=p[k]; } } catch(e){} }
+    function sCounts() { try { localStorage.setItem(STORE, JSON.stringify(cMap)); } catch(e){} }
+    function total() { return Object.values(cMap).reduce((a,b)=>a+b,0); }
+
+    function refresh() {
+        document.getElementById('globalCounter').innerText = total();
+        for (let i=1; i<=btnsTotal; i++) {
+            let cs = document.getElementById('count_'+i), b = document.getElementById('btn_'+i);
+            if (cs && b) { let v = cMap['btn_'+i]||0; cs.innerText = v; v>0 ? b.classList.add('clicked') : b.classList.remove('clicked'); }
+        }
+    }
+
+    function inc(id) { if(cMap.hasOwnProperty(id)) { cMap[id]++; refresh(); sCounts(); } }
+
+    function resetAllCounters() { for (let i=1; i<=btnsTotal; i++) cMap['btn_'+i] = 0; refresh(); sCounts(); }
+
+    function openPopupSettings() {
+        let a = window.open('about:blank', '_blank');
+        if(a){a.document.write(`<html><head><title>Allow Popups</title><style>body{font-family:sans-serif;background:#1a0b2e;color:#fff;text-align:center;padding:40px;line-height:1.8;}.steps{background:#2d1b4e;padding:25px;border-radius:15px;display:inline-block;text-align:left;margin:20px;}.highlight{color:#ffd166;font-weight:bold;}code{background:#000;padding:4px 10px;border-radius:6px;color:#ffd166;font-size:16px;}button{background:#ff6b9d;color:#fff;border:none;padding:12px 30px;border-radius:30px;font-size:16px;cursor:pointer;margin-top:15px;}</style></head><body><h1>Allow Popups</h1><div class="steps"><p>Step 1: Copy URL:</p><p><code>chrome://settings/content/popups</code></p><p>Step 2: Open new tab (Ctrl+T)</p><p>Step 3: Paste & Enter</p><p>Step 4: Allow this site</p><p>Step 5: Come back & START</p></div><button onclick="navigator.clipboard.writeText('chrome://settings/content/popups').then(function(){}).catch(function(){})">COPY SETTINGS URL</button></body></html>`);a.document.close();}
+    }
+
+    function gRounds() { try { let s=localStorage.getItem(RKEY); return s ? parseInt(s) : 3; } catch(e){ return 3; } }
+    function gLimit() { try { let s=localStorage.getItem(LKEY); if(!s) return 0; let v=parseInt(s); return (isNaN(v)||v<0) ? 0 : v; } catch(e){ return 0; } }
+
+    function saveRoundSetting() {
+        let inp = document.getElementById('roundInput');
+        let linp = document.getElementById('limitInput');
+        let cf = document.getElementById('saveConfirm');
+        let v = parseInt(inp.value); if(isNaN(v)||v<1) v=1; if(v>100) v=100;
+        inp.value = v; localStorage.setItem(RKEY, v);
+        let lv = parseInt(linp.value);
+        if(isNaN(lv) || lv < 0) lv = 0;
+        if(lv > 9999) lv = 9999;
+        linp.value = lv; localStorage.setItem(LKEY, lv);
+        document.getElementById('roundDisplay').innerText = v;
+        document.getElementById('limitDisplay').innerText = (lv === 0) ? '∞' : lv;
+        cf.innerText = 'Saved: ' + v + ' round(s) · limit ' + (lv===0?'∞':lv);
+        setTimeout(()=>cf.innerText='',2500);
+    }
+
+    function loadRounds() {
+        let r = gRounds(); let l = gLimit();
+        document.getElementById('roundInput').value = r;
+        document.getElementById('limitInput').value = l;
+        document.getElementById('roundDisplay').innerText = r;
+        document.getElementById('limitDisplay').innerText = (l === 0) ? '∞' : l;
+    }
+
+    let running = false;
+    function startAutoClick() {
+        if(running){alert('Already running!');return;}
+        let btns = document.querySelectorAll('.offer-btn');
+        if(!btns.length){alert('No buttons!');return;}
+        let rds = gRounds(); let lim = gLimit();
+        let totalPossible = btns.length * rds;
+        let maxClicks = (lim === 0 || lim > totalPossible) ? totalPossible : lim;
+        let st = document.getElementById('autoStatus'), sBtn = document.getElementById('autoClickBtn');
+        running = true; sBtn.disabled = true; sBtn.textContent = 'CLICKING...';
+        let cur = 0, round = 1, idx = 0;
+        st.textContent = 'Round 1/'+rds+' · 0/'+maxClicks + (lim===0?' (∞)':' (limit '+lim+')');
+        let t = setInterval(() => {
+            if(cur >= maxClicks){
+                clearInterval(t);
+                st.textContent = 'DONE! '+cur+' clicks' + (lim>0 && lim<totalPossible ? ' (limit reached)' : '');
+                sBtn.disabled = false; sBtn.textContent = 'START AUTO CLICK';
+                running = false; return;
+            }
+            if(round > rds){
+                clearInterval(t);
+                st.textContent = 'DONE! '+cur+' clicks ('+btns.length+'×'+rds+')';
+                sBtn.disabled = false; sBtn.textContent = 'START AUTO CLICK';
+                running = false; return;
+            }
+            if(idx >= btns.length){
+                round++; idx = 0;
+                if(round > rds) return;
+                st.textContent = 'Round '+round+'/'+rds+' · '+cur+'/'+maxClicks;
+                return;
+            }
+            let b = btns[idx], bid = b.id, url = b.href || b.getAttribute('href');
+            if(url){
+                let a = document.createElement('a');
+                a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+                document.body.appendChild(a); a.click(); document.body.removeChild(a);
+                cur++;
+                if(bid && cMap.hasOwnProperty(bid)) inc(bid);
+                st.textContent = 'R'+round+'/'+rds+' · #'+cur+'/'+maxClicks+' OK';
+            } else {
+                cur++;
+                st.textContent = 'R'+round+'/'+rds+' · #'+cur+'/'+maxClicks+' SKIP';
+            }
+            idx++;
+        }, 2000);
+    }
+
+    for(let i=1;i<=btnsTotal;i++){let b=document.getElementById('btn_'+i);if(b)b.addEventListener('click',()=>inc('btn_'+i));}
+    lCounts();loadRounds();refresh();
+</script>
+</body>
+</html>
